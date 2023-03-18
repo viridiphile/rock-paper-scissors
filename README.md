@@ -1,4 +1,4 @@
-#Rock, Paper, Scissors
+**Rock, Paper, Scissors**
 
 Rock paper scissors game for Odin Project
 
