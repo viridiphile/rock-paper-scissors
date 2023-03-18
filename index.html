@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <!-- Styling -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/rock-paper-scissors.ico">
+    <script src="https://kit.fontawesome.com/61bed09f52.js" crossorigin="anonymous"></script>
+    
     <title>RPS</title>
 </head>
+
 <body>
+    <div class="main">
+        <h1>Rock, Paper, Scissors</h1>
+        <!-- <div class="container"> -->
+        <div class="score">
+            <p class="player-score">0</p>
+            <p class="middle-score">-</p>
+            <p class="computer-score">0</p>
+        </div>
+        <h3 class="results">Choose one!</h3>
+        <div class="choice-section">
+            <div class="single-choice">
+                <button class="player-choice" id="rock"><img class="image-choice" src="./assets/images/rock.png"
+                        alt="rock"></button>
+                <p class="subtext">ROCK</p>
+            </div>
+            <div class="single-choice">
+                <button class="player-choice" id="paper"><img src="./assets/images/paper.png" alt="paper"></button>
+                <p class="subtext">PAPER</p>
+            </div>
+            <div class="single-choice">
+                <button class="player-choice" id="scissors"><img src="./assets/images/scissors.png"
+                        alt="scissors"></button>
+                <p class="subtext">SCISSORS</p>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="details">
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Computer's choice</th>
+                        <th>Player's choice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="player-choice-table"></td>
+                        <td class="computer-choice-table"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="retry-button in-game"><i class="fa-solid fa-rotate-right retry-button-icon"></i>Retry</button>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
